@@ -30,6 +30,7 @@
 
 <body>
     <h1 style="text-align:center;">HTML Form Example</h1>
+
     <!-- TODO 2.1: Add the container for the form. It should POST to "/submit_form"  -->
     <form action="/submit_form" method="post">
 
@@ -69,12 +70,12 @@
         <ul>
             <li>
                 <label for="year_level">Year Level:</label>
-                <select id="year_level" name="year_level_box">
-                    <option value="dropdown_default" disabled selected style="display:none">Select an option</option>
-                    <option value="1st_year">1st Year</option>
-                    <option value="2nd_year">2nd Year</option>
-                    <option value="3rd_year">3rd Year</option>
-                    <option value="4th_year">4th Year</option>
+                <select id="year_level" name="year_level_box" required>
+                    <option value="" selected disabled style="display:none">Select an option</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
                 </select>
             </li>
         </ul>
@@ -92,6 +93,7 @@
                 <label for="face_to_face" style="font-weight:normal;">Face to face</label>
             </li>
         </ul>
+
         <!-- TODO 2.8: Add check boxes that ask which subjects the user has taken -->
         <ul>
             <li>
