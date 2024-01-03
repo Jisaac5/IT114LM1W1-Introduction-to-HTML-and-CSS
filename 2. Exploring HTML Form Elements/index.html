@@ -7,7 +7,7 @@
     <style>
         form {
             margin: 0 auto;
-            width: 700px;
+            width: 400px;
             border: 1px solid #ccc;
             border-radius: 1em;
         }
@@ -93,9 +93,41 @@
             </li>
         </ul>
         <!-- TODO 2.8: Add check boxes that ask which subjects the user has taken -->
+        <ul>
+            <li>
+                <label>Subjects:</label>
+
+                <input type="checkbox" id="CS" name="subject_box" value="CS">
+                <label for="CS">CS</label>
+            </li>
+            <li>
+                <input type="checkbox" id="ENG" name="subject_box" value="ENG" style="margin-left:80px;">
+                <label for="ENG">ENG</label>
+            </li>
+            <li>
+                <input type="checkbox" id="IT" name="subject_box" value="IT" style="margin-left:80px;">
+                <label for="IT">IT</label>
+            </li>
+            <li>
+                <input type="checkbox" id="PE" name="subject_box" value="PE" style="margin-left:80px;">
+                <label for="PE">PE</label>
+            </li>
+            <li>
+                <input type="checkbox" id="SS" name="subject_box" value="SS" style="margin-left:80px;">
+                <label for="SS">SS</label>
+            </li>
+        </ul>
         
         <!-- TODO 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
-
+        <ul>
+            <li>
+                <label for="body_choice">Would you rather be a <u>cactus</u> or a <u>shark</u>?</label>
+            </li>
+            <li>
+                <input type="text" id="body_choice" name="body_choice_box" style="margin-top:10px; width:310px;">
+            </li>
+        </ul>
+        
         <!-- TODO 2.10: Add a submit button -->
         <ul>
             <li>
